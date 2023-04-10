@@ -3,13 +3,42 @@
     justify-content: space-between;
     align-items: center;
     padding: 40px 20px 20px 20px;
+    margin-bottom: 15px;
 }
 
 .screen-header__title {
+    display:flex;
     font-size: 32px;
     font-weight: 600;
 }
 
+.screen-header__icons {
+    display: flex;
+}
+
 .screen-header__icons span {
     margin-left: 25px;
+}
+
+.screen-header__lastcoloumn {
+    display:flex;
+    position:relative;
+}
+
+.screen-header__lastcoloumn .badge_small {
+    left:45px;
+    bottom:20px;
+}
+
+@keyframes rotateCog {
+    from{
+transform: none;
+    }
+    to{
+transform: rotateZ(360deg);
+    }
+}
+
+.screen-header__icons .fa-cog:hover {
+animation: rotateCog 1s linear infinite
 }
